@@ -70,22 +70,61 @@ let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
 let hasJavaScript; // Your code here
+
 let codingPosition; // Your code here
+
 let startsWithWelcome; // Your code here
+
 let endsWithToday; // Your code here
 
+hasJavaScript = inputString.includes("JavaScript");
+codingPosition = inputString.indexOf("Coding");
+startsWithWelcome = inputString.startsWith("Welcome");
+endsWithToday = inputString.endsWith("today.");
+
+
+
+
+
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
+
+/*2. Transforming
+  - Convert the string to all lowercase letters using toLowerCase and assign the result to a variable named lowercaseString.
+  - Convert the string to all uppercase letters using toUpperCase and assign the result to a variable named uppercaseString.
+  - Remove the extra spaces from the beginning and end of the string using trim and assign the result to a variable named trimmedString.
+  - Replace the word "JavaScript" with "coding" using replace and assign the result to a variable named replacedString.
+
+*/
+let lowercaseString = inputString.toLowerCase(); // Your code here
+let uppercaseString = inputString.toUpperCase(); // Your code here
+let trimmedString = inputString.trim(); // Your code here
+let replacedString = inputString.replace("JavaScript", "coding"); // Your code here
+
+
 
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let wordsArray= inputString.split(" "); // Your code here
+
+
+
+
+
+
 
 // 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+
+/* . Retrieving
+  - Retrieve the first character of the trimmed string using charAt and assign the result to a variable named firstCharacter.
+  - Extract the word "Bootcamp" from the string using slice and assign the result to a variable named extractedBootcamp.
+*/
+
+
+let firstCharacter = trimmedString.charAt(0); // Your code here
+let extractedBootcamp= trimmedString.slice(22, 30); // Your code here
+
+
+
+
 
 // Log all results
 console.log({
